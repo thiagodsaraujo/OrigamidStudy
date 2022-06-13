@@ -1,0 +1,15 @@
+#link {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 #link {
+  color: seagreen;
+}
+
+body {
+  font-family: Arial;
+}

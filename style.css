@@ -1,0 +1,27 @@
+#introducao {
+  color: goldenrod;
+}
+
+.codigo {
+  color: black;
+}
+
+.design {
+  color: tomato;
+}
+
+.azul {
+  color: blue;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.grande {
+  font-size: 40px;
+}
+
+.riscado {
+  text-decoration: line-through;
+}
