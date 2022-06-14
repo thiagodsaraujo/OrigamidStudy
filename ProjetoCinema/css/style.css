@@ -1,0 +1,28 @@
+.nomeestado {
+  color: rebeccapurple;
+}
+
+.hoje {
+  color: darkred;
+  font-weight: bold;
+}
+
+.amanha {
+  color: darkblue;
+}
+
+.link {
+  text-decoration: none;
+}
+
+p {
+  font-size: 20px;
+}
+
+h2 a {
+  color: seagreen;
+  text-decoration: none;
+}
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}

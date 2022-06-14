@@ -1,5 +1,5 @@
 #introducao {
-  color: goldenrod;
+  color: #ffff00;
 }
 
 .codigo {
@@ -24,4 +24,31 @@
 
 .riscado {
   text-decoration: line-through;
+  background: #8844ee;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+a {
+  display: inline-block;
+}
+
+div {
+  background: #aaa;
+  width: 140px;
+  height: 80px;
+  padding: 20px;
+  border: 10px solid #111;
+  margin: 30px;
+}
+/* para herdar os estilos da classe pai, colocamos "inherit" */
+/* h1 {
+  background: #84e;
+  padding: 20px;
+  width: 180px;
+  border: 2px solid #111;
+  margin: 40px;
+} */
+
+span {
+  border: 1px solid rgba(0, 0, 0, 0.5);
 }
