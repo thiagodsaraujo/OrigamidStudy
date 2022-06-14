@@ -1,0 +1,36 @@
+h1 {
+  text-align: center;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  margin-top: 0px;
+}
+.item {
+  background: #f7f7f7;
+  border: 1px solid #e7e7e7;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.comprar {
+  background: #a8f;
+  color: #103;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  display: grid;
+}
+
+.grid {
+  display: grid;
+  height: 900px;
+  grid-template-columns: auto auto;
+  gap: 20px;
+  /* place-content: atalho para os dois debaixo; */
+  place-content: center center;
+  justify-content: space-around;
+  align-content: center;
+}
