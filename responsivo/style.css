@@ -1,0 +1,38 @@
+img{
+  max-width: 100%;
+  display: block;
+}
+
+div{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+h1{
+  grid-column: 1 / -1;
+}
+/* Significa menor que 600px e min é maiorque*/
+/* Depdendndo do tamanho ele só vai ter uma coluna */
+/* A parte responsiva do site é escrita depois do layout basico */
+@media (max-witdth: 600px){
+  div{
+    grid-template-columns: 1fr;
+  }
+  h1{
+    background-color: lightpink;
+  }
+}
+/* Acima de 700 e ebaixo de 900 para o estilo ser aplicado */
+@media(min-width:700px) and (max-width: 900px) {
+  p{
+    background: lightblue;
+  }
+}
+
+/* é aplicado só na tela */
+/* @media screen {
+  body{
+    background-color: pink;
+  }
+} */
