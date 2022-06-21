@@ -1,0 +1,28 @@
+body{
+  margin: 20px;
+}
+
+ul{
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  display: flex;
+  /* gap: 20px; */
+}
+
+li{
+  margin: 0px 0px 10px 10px;
+}
+
+a{
+  text-decoration: none;
+  background: #eee;
+  padding: 10px 20px;
+  display: block;
+  color: #000;
+}
+
+dl, dd{
+  padding: 0px;
+  margin: 0px;
+}

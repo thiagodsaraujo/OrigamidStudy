@@ -1,0 +1,20 @@
+a {
+  text-decoration: none;
+  color: white;
+  background-color: darkblue;
+  display: inline-block;
+}
+
+p {
+  background-color: lightblue;
+}
+
+.px {
+  font-size: 24px;
+  padding: 16px 32px;
+}
+/* Usamos rem por conta da acessibilidade, 1rem = 16px */
+.rem {
+  font-size: 1.5rem;
+  padding: 1rem 32px;
+}
