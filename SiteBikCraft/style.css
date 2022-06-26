@@ -1,11 +1,32 @@
+:root {
+  --cor-primaria: #e21;
+  --cor-primaria-escura: #900;
+  --fundo-1: #f7f7f7;
+  --fundo-2: #ffffff;
+  --texto: #000000;
+  --subtitulo: rgba(0, 0, 0, 0.2);
+  --onda: url("/imagens/img/onda-clara.svg");
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fundo-1: #111111;
+    --fundo-2: #000000;
+    --texto: #ffffff;
+    --subtitulo: rgba(255, 255, 255, 0.2);
+    --onda: url("/imagens/img/onda-escura.svg");
+  }
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0px;
-  background: #f7f7f7;
   display: grid;
   gap: 60px;
   justify-items: center;
   margin-top: 60px;
+  background-color: var(--fundo-1);
+  color: var(--texto);
 }
 
 img {
@@ -17,10 +38,10 @@ a {
   text-decoration: none;
 }
 
-ul{
-  list-style: none;
+ul {
   margin: 0px;
   padding: 0px;
+  list-style: none;
 }
 
 p,
@@ -35,11 +56,12 @@ p {
   line-height: 1.3;
 }
 
-.header{
+.header {
   display: grid;
-  justify-items: center;
   gap: 60px;
+  justify-items: center;
 }
+
 .menu {
   display: flex;
   flex-wrap: wrap;
@@ -49,17 +71,16 @@ p {
 
 .menu a {
   display: block;
-  background: #fff;
+  background: var(--fundo-2);
   padding: 1rem 2rem;
   border-radius: 4px;
-  color: #000;
+  color: var(--texto);
   text-transform: uppercase;
-  border: 2px solid #fff;
-
+  border: 2px solid var(--fundo-2);
 }
 
-.menu a:hover{
-  border-color: #e21;
+.menu a:hover {
+  border-color: var(--cor-primaria);
 }
 
 .conteudo {
@@ -69,7 +90,7 @@ p {
 }
 
 .introducao {
-  background: #fff;
+  background: var(--fundo-2);
   padding: 40px;
   text-align: right;
   position: relative;
@@ -79,119 +100,118 @@ p {
   justify-items: end;
 }
 
-.introducao h1{
+.introducao h1 {
   font-size: 2rem;
 }
 
-.introducao::before{
+.introducao::before {
+  content: "";
   width: 60px;
   height: 4px;
-  color: #e21;
+  background: var(--cor-primaria);
   position: absolute;
   top: 30px;
   right: -30px;
 }
 
-.introducao-cover img{
+.introducao-cover img {
   object-fit: cover;
   height: 100%;
 }
 
 .botao {
-  content: "-";
-  background: #e21;
-  color: #fff;
+  background: var(--cor-primaria);
+  color: #ffffff;
   padding: 1rem 2rem;
   border-radius: 4px;
   text-transform: uppercase;
 }
 
-.botao:hover{
-  background: #900;
+.botao:hover {
+  background: var(--cor-primaria-escura);
 }
 
 .subtitulo {
   font-size: 4rem;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.2);
+  color: var(--subtitulo);
   text-align: right;
   padding: 40px;
   align-self: center;
-  background-image: url("/imagens/img/onda.svg");
-  /* word-break: break-all; quebra palavra */
+  background-image: var(--onda);
+  /* word-break: break-all; */
 }
 
 .vantagens {
-  background: #fff;
+  background: var(--fundo-2);
   padding: 40px;
 }
 
 .vantagens-item {
   display: grid;
-  grid-template-columns: auto, 1fr;
+  grid-template-columns: auto 1fr;
   gap: 10px 20px;
   padding: 20px;
   border-left: 4px solid transparent;
-
 }
 
-.vantagens-item:hover{
-  border-color: #e21;
+.vantagens-item:nth-child(odd) {
+  background: var(--fundo-1);
 }
 
-.vantagens-item:nth-child(odd){
-  background: #f7f7f7;
-
+.vantagens-item:hover {
+  border-color: var(--cor-primaria);
 }
 
 .vantagens-item p {
   grid-column: 2;
 }
 
-.rodape{
-  background: #fff;
+.rodape {
+  background: var(--fundo-2);
   width: 100%;
   text-align: center;
   padding: 40px;
   box-sizing: border-box;
 }
 
-
-@media (max-width: 1000px){
-  .conteudo-vantagem{
+@media (max-width: 1000px) {
+  .conteudo-vantagem {
     grid-template-columns: 1fr;
   }
-  .subtitulo{
+  .subtitulo {
     text-align: center;
   }
 }
 
-@media (max-width: 600px){
-  body{
-    gap:30px;
+@media (max-width: 600px) {
+  body {
+    gap: 30px;
     margin-top: 20px;
   }
-  .header{
+  .header {
     gap: 30px;
   }
-  .conteudo{
+  .conteudo {
     grid-template-columns: 1fr;
   }
-  .introducao{
+  .introducao {
     text-align: left;
     justify-items: start;
   }
-  .introducao::before{
+  .introducao::before {
     display: none;
   }
-  .subtitulo{
+  .subtitulo {
     font-size: 3rem;
   }
 }
 
-/* abaixo de 400 */
-@media (max-width: 400px){
-.subtitulo{
-  font-size: 2rem;
-}
+@media (max-width: 400px) {
+  .subtitulo {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1rem;
+  }
 }

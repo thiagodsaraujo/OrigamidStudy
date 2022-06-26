@@ -1,0 +1,84 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+}
+
+label{
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+
+input{
+  font-size: 1.2rem;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 4px;
+  background: #ccc;
+
+}
+
+button{
+  display: block;
+  margin-top: 30px;
+}
+
+.checkbox, .radio {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.checkbox label,
+.radio label{
+  margin: 0px;
+  display: inline-block;
+}
+
+.checkbox input
+,.radio input{
+  margin: 0px;
+  width: 20px;
+  height: 20px;
+}
+
+select{
+ font-size: 1.2rem;
+ padding: 10px;
+}
+
+textarea{
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+button{
+  font-size: 2rem;
+  padding: 10px 20px;
+  background: #caf;
+  border: none;
+  color: #217;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.seletores{
+  margin-top: 30px;
+}
+
+.seletores input:required{
+  border: 2px solid tomato;
+}
+
+.seletores a[href="#contato"]{
+  border: 2px solid greenyellow;
+}
+
+[href^="#"]{
+  background-color: blueviolet;
+}
