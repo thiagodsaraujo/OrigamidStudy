@@ -1,3 +1,6 @@
+.html {
+  cursor: none;
+}
 .ativo {
   color: tomato;
   text-decoration: none;
@@ -6,4 +9,20 @@
 .ativo a {
   color: tomato;
   text-decoration: none;
+}
+
+.texto {
+  display: none;
+}
+
+.texto.ativar {
+  display: block;
+}
+
+#circulo {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #999;
+  position: absolute;
 }
