@@ -1,14 +1,14 @@
-const nav = document.querySelector("nav");
-const produtos = document.querySelector(".produtos a");
-console.log(nav);
-console.log(produtos);
+const imagens = document.querySelectorAll("#galeria li img");
 
-console.log(produtos.href);
+function galeriaTrocar(event) {
+  const principal = document.querySelector("#imagem-principal");
+  const clicada = event.currentTarget;
+  principal.src = clicada.src;
+  principal.alt = clicada.alt;
+}
 
-nav.style.backgroundColor = "black";
+function galeriaClique(imagem) {
+  imagem.addEventListener("click", galeriaTrocar);
+}
 
-nav.style.padding = "1rem";
-
-nav.classList.add("ativo");
-
-
+imagens.forEach(galeriaClique);
